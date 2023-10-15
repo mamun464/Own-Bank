@@ -61,21 +61,21 @@
                     style="background-color: #56566747; box-shadow: 0px -5px 60px 0px #00000080;">
                     <div class="pl-6 py-8">
                         <h1 class="font-Inria text-4xl mb-4">Deposit</h1>
-                        <h2 class="font-Devanagari text-5xl">$ 00 </h2>
+                        <h2 class="font-Devanagari text-5xl">$ <span id="total_deposit">00</span> </h2>
                     </div>
                 </div>
                 <div class=" z-5 shadow-md  rounded-xl"
                     style="background-color: #56566747; box-shadow: 0px -5px 60px 0px #00000080;">
                     <div class="pl-6 py-8">
                         <h1 class="font-Inria text-4xl mb-4">Withdraw</h1>
-                        <h2 class="font-Devanagari text-5xl">$ 00 </h2>
+                        <h2 class="font-Devanagari text-5xl">$ <span id="total_withdraw">00</span> </h2>
                     </div>
                 </div>
                 <div class=" z-5 shadow-md  rounded-xl"
                     style="background-color: #56566747; box-shadow: 0px -5px 60px 0px #00000080;">
                     <div class="pl-6 py-8">
                         <h1 class="font-Inria text-4xl mb-4">Balance</h1>
-                        <h2 class="font-Devanagari text-5xl">$ 00 </h2>
+                        <h2 class="font-Devanagari text-5xl">$ <span id="balance_total">00</span> </h2>
                     </div>
                 </div>
 
@@ -87,14 +87,14 @@
                         <h1 class="font-Inria text-4xl mb-4">Please Deposit</h1>
                         <div class="flex flex-col justify-center items-center">
                             <div class="w-full flex justify-center">
-                                <input type="text " id="usernme-field"
+                                <input type="text " id="deposit_amount"
                                     class="mb-8 outline-none text-[#FFFFFF99] text-2xl font-Devanagari font-normal h-16 rounded-xl pl-6 pt-7 pb-4 w-9/12"
                                     placeholder="$ Amount you want to Deposit" style=" background-color: #4D4D63;">
                             </div>
                             <div class="flex justify-start w-9/12">
                                 <button
                                     class="mb-10 px-5 font-Inria font-bold text-3xl w-1/2 bg-[#13294C] py-4 rounded-xl text-white"
-                                    id="btn-submit">Deposit</button>
+                                    id="btn_submit">Deposit</button>
                             </div>
                         </div>
 
@@ -106,14 +106,14 @@
                         <h1 class="font-Inria text-4xl mb-4">Please Withdraw</h1>
                         <div class="flex flex-col justify-center items-center">
                             <div class="w-full flex justify-center">
-                                <input type="text " id="usernme-field"
+                                <input id="withdraw_amount_field" type="text " id="usernme-field"
                                     class="mb-8 outline-none text-[#FFFFFF99] text-2xl font-Devanagari font-normal h-16 rounded-xl pl-6 pt-7 pb-4 w-9/12"
-                                    placeholder="$ Amount you want to Deposit" style=" background-color: #4D4D63;">
+                                    placeholder="$ Amount you want to withdraw" style=" background-color: #4D4D63;">
                             </div>
                             <div class="flex justify-start w-9/12">
                                 <button
                                     class="mb-10 px-5 font-Inria font-bold text-3xl w-1/2 bg-[#13294C] py-4 rounded-xl text-white"
-                                    id="btn-submit">Withdraw</button>
+                                    id="btn_withdraw">Withdraw</button>
                             </div>
                         </div>
 
@@ -124,7 +124,8 @@
 
     </main>
 
-    <script src="login.js"></script>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
 
 </body>
 
